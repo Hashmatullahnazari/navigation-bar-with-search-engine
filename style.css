@@ -1,0 +1,83 @@
+*
+{
+  margin: 0;
+  
+}
+body
+{
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+}
+header
+{
+  width: 100%;
+  background: tomato;
+  height: 100px;
+}
+
+.wrapper
+{
+  width: 1100px;
+  margin: auto;
+}
+
+header .logo-left
+{
+  float: left;
+  line-height: 100px;
+  color: #F0F8FF;
+}
+header .menu-right ul
+{
+  float: right;
+}
+
+header .menu-right li
+{
+  display: inline-block;
+  
+}
+
+header .menu-right li a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 16px;
+	line-height: 79px;
+	font-size: 20px;
+	color: #F0F8FF;
+}
+
+header .menu-right li a:hover, a:focus {
+	background: brown;
+	color: black;
+	transition: 2s ease;
+}
+
+header .menu-right ul .search-container {
+	float: right;
+	padding: 29px 0 29px 0px;
+}
+
+header .menu-right ul .search-container input[type=text] {
+
+  padding: 10.5px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  
+}
+
+button {
+	float: left;
+	width: 20%;
+	padding: 13px;
+	background: #2196F3;
+	color: white;
+	font-size: 17px;
+	border: 1px solid #114dc6;
+	border-left: none;
+	cursor: pointer;
+}
+
+
