@@ -1,8 +1,9 @@
 *
 {
   margin: 0;
-  
+box-sizing: border-box;
 }
+
 body
 {
   font-family: Futura, "Trebuchet MS", Arial, sans-serif;
@@ -16,7 +17,7 @@ header
 
 .wrapper
 {
-  width: 1100px;
+  width: 1400px;
   margin: auto;
 }
 
@@ -34,7 +35,7 @@ header .menu-right ul
 header .menu-right li
 {
   display: inline-block;
-  
+
 }
 
 header .menu-right li a {
@@ -43,7 +44,8 @@ header .menu-right li a {
 	padding: 10px 16px;
 	line-height: 79px;
 	font-size: 20px;
-	color: #F0F8FF;
+	color: #000;
+  
 }
 
 header .menu-right li a:hover, a:focus {
@@ -54,7 +56,7 @@ header .menu-right li a:hover, a:focus {
 
 header .menu-right ul .search-container {
 	float: right;
-	padding: 29px 0 29px 0px;
+	padding: 29px 0 29px 100px;
 }
 
 header .menu-right ul .search-container input[type=text] {
@@ -65,6 +67,7 @@ header .menu-right ul .search-container input[type=text] {
   float: left;
   width: 80%;
   background: #f1f1f1;
+  
   
 }
 
@@ -80,4 +83,73 @@ button {
 	cursor: pointer;
 }
 
+::placeholder
+{
+  font-size: 20px;
+  color: #FF6347;
+}
+
+@media only screen and (max-width: 800px) {
+ header .menu-right ul, .menu-right li, .search-container, input[type=text]  {
+float: none;
+    display: block;
+  }
+  
+}
+.row
+{
+  position: relative;
+}
+.row .box
+{
+  position: relative;
+  float: left;
+  width: 50%;
+  
+}
+
+.row .box .one {
+    position: absolute;
+top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background:rgba(0,0,0,0.5) ;
+  color: white;
+  
+}
+
+.row .box .two {
+    position: absolute;
+top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background:rgba(0,0,0,0.5) ;
+  color: white;
+  
+}
+
+img
+{
+  width: 100%;
+}
+.row1 .box1
+{
+  width: 33.09%;
+  float: left;
+   margin-left: 0.1%;
+}
+.box1 img
+{
+  
+  width: 100%;
+}
+
+.column .box3
+{
+  margin-left: 0.1%;
+  float: left;
+  width: 24.9%;
+}
 
